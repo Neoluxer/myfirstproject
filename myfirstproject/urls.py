@@ -19,7 +19,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/', views.about),
-    path('form/', views.form),
-    path('', views.main),
+    path('about/', views.about, name='about'),
+    path('form/', views.form, name='form'),
+    path('', views.main, name='main'),
+    path('reverse/', views.reverse, name='reverse'),
 ]

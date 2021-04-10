@@ -8,7 +8,7 @@
 <h2>Textarea</h2>
 <p>{{name}}!</p>
 
-<form>
+<form action = "{% url 'reverse' %}">
   <textarea name="message" rows="10" cols="50">The cat was playing in the garden.</textarea>
     <br><br>
   <input type="submit">

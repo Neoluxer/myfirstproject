@@ -12,3 +12,8 @@ def form(request):
 
 def main(request):
     return render(request,'home.html',{'greeting':'Hello!'})
+
+def reverse(request):
+    message_text = request.GET['message']
+    reverse_text = message_text[::-1]
+    return render(request,'reverse.html',{'message': reverse_text})
